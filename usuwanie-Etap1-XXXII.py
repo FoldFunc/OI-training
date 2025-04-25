@@ -1,3 +1,4 @@
+
 def roz1():
     fin_score = 0
     a, b = input().split()

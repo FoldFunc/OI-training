@@ -6,10 +6,13 @@ def roz1():
         sint = int(s)
         zint = int(z)
         hash_map[sint] = zint
-
-    used = set()
-    for (i, j) in zip(hash_map):
-        if 
+    used = {}
+    for key, value in hash_map.items():
+        if key in used and value in used:
+            continue
+        for keyj, valuej in hash_map.items():
+            if keyj in used and valuej in used:
+                continue
 
 def main():
     roz1()
